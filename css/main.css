@@ -1,0 +1,361 @@
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+/* clearfixes */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/* end of clear fix */
+
+.row {
+  margin: 0;
+}
+.col {
+  padding: 0;
+}
+.container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-large {
+  color: #FFF;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.mobile-warning {
+  color: #fff;
+  height: 100vh;
+  font-weight: 300;
+  text-align: center;
+}
+
+.gs-main-content-container {
+    width: 560px;
+    padding-top: 100px;
+}
+  .gs-row {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .gs-main-name {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 8em;
+    margin: auto;
+    line-height: 150px;
+  }
+
+  .gs-main-photo {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: url(../img/headshot.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    border: 4px solid #000;
+  }
+
+  .gs-main-description {
+    margin: 0 auto;
+    line-height: 2.5;
+    text-align: justify;
+  }
+
+  .gs-group-title {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 5em;
+  }
+  
+  .gs-bubble-wrapper {
+    display: table;
+    margin: 20px auto;
+  }
+
+    .gs-skill-bubble {
+      display: table-cell;
+      vertical-align: middle;
+      height: 150px;
+      width: 150px;
+      border-radius: 75px;
+      border: 1px solid #000;  
+    }
+
+    .gs-work-bubble {
+      display: table-cell;
+      vertical-align: middle;
+      height: 150px;
+      width: 150px;
+      border: 1px solid #000;
+    }
+
+    .gs-links-bubble {
+      display: table-cell;
+      vertical-align: middle;
+      height: 150px;
+      width: 150px;
+      background: black;
+      color: white;
+      transform: rotate(26deg);
+    }
+
+/* Break Title Style */
+
+// .break {
+//   position: relative;
+//   height: 200px;
+// }
+//   .bg-break {
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     z-index: 1;
+//   }
+//   .break-label {
+//     color: #FFF;
+//     font-size: 60px;
+//     font-weight: 300;
+//     letter-spacing: 2px;
+//     padding-top: 50px;
+//     position: relative;
+//     z-index: 100;
+//     width: 80%;
+//   }
+
+// /* Common Block Styles */
+
+// .section {
+//   /*background: url(../img/bg_computer.jpg) no-repeat center center fixed; 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;*/
+//   // background: #ededed;
+// }
+
+// /* Title Styles */
+
+// .landing-section {
+//   display: -webkit-box;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//   -webkit-flex-direction: column;
+//       -ms-flex-direction: column;
+//           flex-direction: column;
+//   -webkit-box-pack: center;
+//   -webkit-justify-content: center;
+//       -ms-flex-pack: center;
+//           justify-content: center;
+//   -webkit-align-content: center;
+//       -ms-flex-line-pack: center;
+//           align-content: center;
+//   height: 100vh;
+// }
+//   .landing-section__bg {
+//      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/bg_macbook.jpg);
+//      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/bg_macbook.jpg);
+//       background-size: cover;
+//   }
+//   .landing-section .name-wrapper {
+//     color: #FFFFFF;
+//     /*position: relative;*/
+//     /*top: 25%;*/
+//     width: 90%;
+//     height: 200px;
+//     text-align: center;
+//   }
+//     .name-wrapper .my-name {
+//       font-size: 100px;
+//       font-weight: 400;
+//       letter-spacing: 3px;
+//       line-height: 1;
+//     }
+//     .name-wrapper .my-motto {
+//       font-size: 50px;
+//       letter-spacing: 3px;
+//     }
+//     .name-wrapper .fa {
+//       position: relative;
+//       bottom: -100px;
+//       font-size: 50px;
+//     }
+
+// /* Education Block Styles */
+
+// .education {
+//   background: url(../img/uw_campus.jpg) no-repeat center left fixed;
+//   background-size: cover;
+//   height: 100vh;
+// }
+//   .edu-wrapper {
+//     height: 180px;
+//     margin-top: -90px;
+//     background: rgba(0,0,0,0.5);
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     position: relative;
+//     top: 50%;
+//   }
+
+// /* Skills Summary Block Styles */
+// .skills-summary {
+//   background: url(../img/raindrops.jpg) no-repeat center center fixed;
+//   background-size: cover;
+// }
+// .enum-box {
+//   position: relative;
+//   margin: 30px auto;
+//   max-width: 70%;
+//   height: 350px;
+//   box-shadow: 0px 0px 10px 0 rgba(0,0,0,0.2);
+// }
+//   .enum-box .left{
+//     height: 350px;
+//   }
+//   .enum-box .right{
+//     height: 350px;
+//     background: #fff;
+//   }
+//   .enum-box-content {
+//     margin-top: 20px;
+//     margin-left: 20px;
+//   }
+//     .enum-box-title {
+//       font-size: 40px;
+//       padding: 10px;
+//       font-weight: 300;
+//     }
+//     .enum-box-list ul{
+//       list-style: none;
+//       margin-left: 0px;
+//       padding-top: 5px;
+//       font-size: 20px;
+//       -webkit-padding-start: 15px;
+//     }
+//       .enum-box-list ul li{
+        
+//         padding-top: 5px;
+//       }
+
+//   /* Skills pills backgrounds */
+//   #bg-core {
+//     background: url(../img/microchip.jpg) no-repeat center center;
+//       background-size: cover;
+//   }
+//   #bg-mobile {
+//     background: url(../img/iphone_sm.png) no-repeat center center;
+//       background-size: cover;
+//   }
+
+//   #bg-web {
+//    background: url(../img/chromebook.jpg) no-repeat center center;
+//       background-size: cover; 
+//   }
+
+// /* Experience Block Styles */
+
+// .experience {
+//   background: url(../img/bg_computer.jpg) no-repeat center center fixed;
+//   background-size: cover;
+// }
+//   .experience .exp-wrapper {
+//     height: 200px;
+//     width: 800px;
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+//     margin-right: auto;
+//     margin-left: auto;
+//     text-align: center;
+//   }
+
+// .footer {
+//   position: relative;
+//   color: #fff;
+// }
+// .footer .col {
+//   height: 100%;
+// }
+//   .project-link {
+//     height: 100%;
+//     font-size: 50px;
+//     display: -webkit-box;
+//     display: -webkit-flex;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-box-pack: center;
+//     -webkit-justify-content: center;
+//         -ms-flex-pack: center;
+//             justify-content: center;
+//     text-align: center;
+//     -webkit-box-align: center;
+//     -webkit-align-items: center;
+//         -ms-flex-align: center;
+//             align-items: center;
+//     cursor: pointer;
+//     -webkit-transition: 1s;
+//             transition: 1s;
+//   }
+//   .project-link:hover {
+//     background-color: #555;
+//   }
+//   .hire-me {
+//     color: #74D108;
+//     font-weight: 900;
+//     font-family: 'Lato', sans-serif;
+//   }
+//   .hire-me:hover {
+//     background-color: #74D108;
+//     color: #000;
+//   }
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+
+}
