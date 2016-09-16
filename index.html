@@ -16,8 +16,8 @@
     <script src="lib/modernizr.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
     <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="dist/main.css"/>
+    <!-- <link rel="stylesheet" href="css/styles.css"/> -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,187 +33,204 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="gs-logo-landing">
-      <div class="gs-logo-container center">
+    <div class="gs-fixed-wrapper">
+      <div class="gs-modal-full md-effect js-modal">
+        <div class="gs-modal-container">
+          <span class="gs-modal-close-btn js-modal-closeBtn">X</span>
+          <h4 id="js-modal-title" class="gs-modal-title"></h4>
+          <p id="js-modal-description" class="gs-modal-description"></p>
+          <ul id="js-modal-desc-ul" class="gs-modal-description"></ul>
+        </div>
       </div>
+      <div class="gs-logo-landing">
+        <div class="gs-logo-container center">
+        </div>
+      </div>
+      <div class="gs-main-content-container center">
+        <div class="container">
+          <div class="row gs-row">
+            <div class="gs-main-photo">
+                <!--  Pic here -->
+            </div>
+          </div>
+          <div class="row gs-row">
+            <div class="gs-main-name">
+              GEOFFREY SALISI
+            </div>
+          </div>
+          <div class="row gs-row">
+            <p class="gs-main-description">
+              Hi! My name is Geoffrey, that is pronounced "Jo-ffrey"-- like Game of Thrones!
+  For the past couple of years, I have developed web applications for companies such as Delphix, Compass and RBC Capital Markets. I mostly focused on front-end specific tasks where I enjoyed working with designers to create beautiful and intuitive user interfaces while maintaining a scalable front-end code architecture. As much as I enjoy front-end work, I also have experience in working in back-end, databases and other low-level technologies! In my spare time, I enjoy dancing to Hip-hop and RnB music.
+            </p>
+          </div>
+
+          <!-- SKILLS SUMMARY -->
+          <div class="row gs-row">
+            <div class="gs-group-title">
+             - SUPERPOWERS -
+            </div>
+          </div>
+           <div class="row gs-row">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
+                    data="angularjs">
+                    ANGULARJS
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
+                    data="javascript">
+                     JAVASCRIPT
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
+                    data="htmlcss">
+                     HTML &amp; CSS
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-skill-bubble gs-bubble">
+                     UI/UX
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-skill-bubble gs-bubble">
+                     JAVA
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-skill-bubble gs-bubble">
+                     FULLSTACK WEB
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF SKILLS SUMMARY -->
+          
+          <!-- WORK EXPERIENCE -->
+          <div class="row gs-row">
+            <div class="gs-group-title">
+             - BATTLEGROUNDS -
+            </div>
+          </div>
+          <div class="row gs-row">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-work-bubble gs-bubble">
+                     Delphix
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-work-bubble gs-bubble">
+                     Compass
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-work-bubble gs-bubble">
+                     SAP
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-work-bubble gs-bubble">
+                     RBC
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-work-bubble gs-bubble">
+                    University Of Waterloo
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-work-bubble gs-bubble">
+                     OHA
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF WORK EXPERIENCE -->
+
+          <!-- LINKS -->
+          <div class="row gs-row">
+            <div class="gs-group-title">
+             - PORTALS -
+            </div>
+          </div>
+          <div class="row gs-row">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-links-bubble gs-bubble">
+                    GITHUB
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-links-bubble gs-bubble">
+                     RESUME
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-links-bubble gs-bubble">
+                     LINKEDIN
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF LINKS -->
+          <!-- FOOTER -->
+          <div class="row gs-row gs-footer">
+            <div class="gs-footer-note">
+              crafted from scratch by @geoffreysalisi
+            </div>
+            <div class="gs-footer-note-2">
+              &copy; October 2016
+            </div>
+          </div>
+        </div>
+      </div>       
     </div>
-    <div class="gs-main-content-container center">
-      <div class="container">
-        <div class="row gs-row">
-          <div class="gs-main-photo">
-              <!--  Pic here -->
-          </div>
-        </div>
-        <div class="row gs-row">
-          <div class="gs-main-name">
-            GEOFFREY SALISI
-          </div>
-        </div>
-        <div class="row gs-row">
-          <p class="gs-main-description">
-            Hi! My name is Geoffrey, that is pronounced "Jo-ffrey"-- like Game of Thrones!
-For the past couple of years, I have developed web applications for companies such as Delphix, Compass and RBC Capital Markets. I mostly focused on front-end specific tasks where I enjoyed working with designers to create beautiful and intuitive user interfaces while maintaining a scalable front-end code architecture. As much as I enjoy front-end work, I also have experience in working in back-end, databases and other low-level technologies! In my spare time, I enjoy dancing to Hip-hop and RnB music.
-          </p>
-        </div>
-
-        <!-- SKILLS SUMMARY -->
-        <div class="row gs-row">
-          <div class="gs-group-title">
-           - SUPERPOWERS -
-          </div>
-        </div>
-         <div class="row gs-row">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-skill-bubble gs-bubble">
-                  ANGULARJS
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-skill-bubble gs-bubble">
-                   JAVASCRIPT
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-skill-bubble gs-bubble">
-                   CSS
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-skill-bubble gs-bubble">
-                   HTML
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-skill-bubble gs-bubble">
-                   JAVA
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-skill-bubble gs-bubble">
-                   FULLSTACK WEB
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END OF SKILLS SUMMARY -->
-        
-        <!-- WORK EXPERIENCE -->
-        <div class="row gs-row">
-          <div class="gs-group-title">
-           - BATTLEGROUNDS -
-          </div>
-        </div>
-        <div class="row gs-row">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-work-bubble gs-bubble">
-                   Delphix
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-work-bubble gs-bubble">
-                   Compass
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-work-bubble gs-bubble">
-                   SAP
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-work-bubble gs-bubble">
-                   RBC
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-work-bubble gs-bubble">
-                  University Of Waterloo
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-work-bubble gs-bubble">
-                   OHA
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END OF WORK EXPERIENCE -->
-
-        <!-- LINKS -->
-        <div class="row gs-row">
-          <div class="gs-group-title">
-           - PORTALS -
-          </div>
-        </div>
-        <div class="row gs-row">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-links-bubble gs-bubble">
-                  GITHUB
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-links-bubble gs-bubble">
-                   RESUME
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="gs-bubble-wrapper">
-                <div class="gs-links-bubble gs-bubble">
-                   LINKEDIN
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END OF LINKS -->
-        <!-- FOOTER -->
-        <div class="row gs-row gs-footer">
-          <div class="gs-footer-note">
-            crafted from scratch by @geoffreysalisi
-          </div>
-          <div class="gs-footer-note-2">
-            &copy; October 2016
-          </div>
-        </div>
-      </div>
-    </div>       
   
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" 
+        integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" 
+        crossorigin="anonymous">
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="lib/clickoutside.js"></script>
+    <script src="dist/app.js"></script>
   </body>
 </html>

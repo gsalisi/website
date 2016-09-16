@@ -3,7 +3,6 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 100;
   -webkit-user-select: none;
-  cursor: default;
 }
 
 h2 {
@@ -68,50 +67,11 @@ a:active {
 .gs-fixed-wrapper {
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  overflow-y: auto;
+  position: relative;
 }
-
-.gs-modal-full {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-  .gs-modal-container {
-    position: relative;
-    height: 400px;
-    width: 720px;
-    background: white;
-    z-index: 3;
-    box-shadow: 0 10px 60px -6px black;
-    padding: 50px 50px;
-    overflow-y: auto;
-  }
-    .gs-modal-title {
-      font-family: 'Amatic SC', cursive;
-      font-size: 5em;
-    }
-
-    .gs-modal-description {
-      line-height: 2;
-    }
-
-    .gs-modal-close-btn {
-      display: inline-block;
-      position: absolute;
-      right: 20px;
-      top: 10px;
-      font-size: 28px;
-      cursor: pointer;
-    }
 
 .gs-main-content-container {
-    max-width: 560px;
+    width: 560px;
     padding-top: 100px;
 }
   .gs-row {
@@ -141,7 +101,6 @@ a:active {
     margin: 0 auto;
     line-height: 2.5;
     text-align: justify;
-    padding: 0px 15px;
   }
 
   .gs-group-title {
@@ -162,6 +121,7 @@ a:active {
       width: 150px;
       border: 1px solid black;
       cursor: pointer;
+      -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out;
     }
 
@@ -172,25 +132,29 @@ a:active {
     .gs-skill-bubble:hover {
       color: white;
       background: black;
-      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
     }
 
     .gs-work-bubble:hover {
       color: white;
       background: black;
-      transform: translateY(-3px);
+      -webkit-transform: translateY(-3px);
+              transform: translateY(-3px);
     }
 
     .gs-links-bubble {
       background: black;
       color: white;
-      transform: rotate(26deg);
+      -webkit-transform: rotate(26deg);
+              transform: rotate(26deg);
     }
 
     .gs-links-bubble:hover {
       color: black;
       background: white;
-      transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg);
     }
 
 .gs-footer {
@@ -224,25 +188,4 @@ a:active {
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
 
-}
-
-.md-effect {
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  visibility: hidden;
-}
-
-.md-show.md-effect {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
 }
