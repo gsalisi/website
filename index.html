@@ -37,16 +37,26 @@
       <div class="gs-modal-full md-effect js-modal">
         <div class="gs-modal-container">
           <span class="gs-modal-close-btn js-modal-closeBtn">X</span>
-          <h4 id="js-modal-title" class="gs-modal-title"></h4>
-          <p id="js-modal-description" class="gs-modal-description"></p>
-          <ul id="js-modal-desc-ul" class="gs-modal-description"></ul>
+          <div class="gs-modal-content-wrapper">
+            <h4 id="js-modal-title" class="gs-modal-title"></h4>
+            <p id="js-modal-description" class="gs-modal-description"></p>
+            <ul id="js-modal-desc-ul" class="gs-modal-description"></ul>
+            <div id="js-modal-link" class="gs-modal-link js-modal-link"></div>
+          </div>
         </div>
       </div>
+
+      <!-- LOGO -->
       <div class="gs-logo-landing">
-        <div class="gs-logo-container center">
-        </div>
+          <img class="gs-logo js-logo" src="img/gs_logo.svg" 
+            alt="Geoffrey Salisi">
       </div>
-      <div class="gs-main-content-container center">
+      <div class="gs-caret-down-container js-caret-container">
+        <img class="gs-caret-down" src="img/arrow-down.png">
+      </div>
+
+      <!-- Start of Main -->
+      <div class="gs-main-content-container center js-main-content hidden">
         <div class="container">
           <div class="row gs-row">
             <div class="gs-main-photo">
@@ -59,9 +69,9 @@
             </div>
           </div>
           <div class="row gs-row">
-            <p class="gs-main-description">
+            <p class="gs-main-description js-main-description">
               Hi! My name is Geoffrey, that is pronounced "Jo-ffrey"-- like Game of Thrones!
-  For the past couple of years, I have developed web applications for companies such as Delphix, Compass and RBC Capital Markets. I mostly focused on front-end specific tasks where I enjoyed working with designers to create beautiful and intuitive user interfaces while maintaining a scalable front-end code architecture. As much as I enjoy front-end work, I also have experience in working in back-end, databases and other low-level technologies! In my spare time, I enjoy dancing to Hip-hop and RnB music.
+For the past couple of years, I developed web applications for companies such as Delphix, Compass and RBC Capital Markets. I mostly focused on front-end development where I enjoyed working with other engineers and designers to create beautiful and intuitive user interfaces while maintaining a scalable front-end architecture. As much as I enjoy front-end work, I also have experience working in all layers of the stack such as the API, services, database and build tools. As a hobby, I enjoy dancing urban hiphop choreography and uhm... eating.
             </p>
           </div>
 
@@ -72,28 +82,12 @@
             </div>
           </div>
            <div class="row gs-row">
-            <div class="row">
-              <div class="col-md-4">
+             <div class="row">
+              <div class="col-md-12">
                 <div class="gs-bubble-wrapper">
-                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
-                    data="angularjs">
-                    ANGULARJS
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
-                    data="javascript">
-                     JAVASCRIPT
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
-                    data="htmlcss">
-                     HTML &amp; CSS
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle" 
+                    data="core">
+                     DEGREE
                   </div>
                 </div>
               </div>
@@ -101,22 +95,35 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="gs-bubble-wrapper">
-                  <div class="gs-skill-bubble gs-bubble">
-                     UI/UX
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
+                    data="frontend">
+                    FRONTEND
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="gs-bubble-wrapper">
-                  <div class="gs-skill-bubble gs-bubble">
-                     JAVA
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
+                    data="backend">
+                     BACKEND
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="gs-bubble-wrapper">
-                  <div class="gs-skill-bubble gs-bubble">
-                     FULLSTACK WEB
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle"
+                    data="others">
+                     OTHERS
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="gs-bubble-wrapper">
+                  <div class="gs-skill-bubble gs-bubble js-modal-toggle" 
+                    data="dance">
+                     DANCE
                   </div>
                 </div>
               </div>
@@ -127,52 +134,46 @@
           <!-- WORK EXPERIENCE -->
           <div class="row gs-row">
             <div class="gs-group-title">
-             - BATTLEGROUNDS -
+             - COMPANIES -
             </div>
           </div>
           <div class="row gs-row">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-md-offset-2">
                 <div class="gs-bubble-wrapper">
-                  <div class="gs-work-bubble gs-bubble">
+                  <div 
+                    class="gs-work-bubble gs-bubble js-modal-toggle"
+                    data="work_delphix">
                      Delphix
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="gs-bubble-wrapper">
-                  <div class="gs-work-bubble gs-bubble">
+                   <div 
+                    class="gs-work-bubble gs-bubble js-modal-toggle"
+                    data="work_compass">
                      Compass
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-work-bubble gs-bubble">
-                     SAP
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
+              <div class="col-md-4 col-md-offset-2">
+                <div class="gs-bubble-wrapper">
+                  <div 
+                    class="gs-work-bubble gs-bubble js-modal-toggle"
+                    data="work_sap">
+                     SAP
+                  </div>
+                </div>
+              </div>
               <div class="col-md-4">
                 <div class="gs-bubble-wrapper">
-                  <div class="gs-work-bubble gs-bubble">
+                  <div 
+                    class="gs-work-bubble gs-bubble js-modal-toggle"
+                    data="work_rbc">
                      RBC
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-work-bubble gs-bubble">
-                    University Of Waterloo
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-work-bubble gs-bubble">
-                     OHA
                   </div>
                 </div>
               </div>
@@ -189,23 +190,26 @@
           <div class="row gs-row">
             <div class="row">
               <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-links-bubble gs-bubble">
-                    GITHUB
+                <div class="gs-bubble-wrapper js-link">
+                  <div class="gs-links-bubble gs-bubble"
+                    data="github">
+                      GITHUB
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-links-bubble gs-bubble">
-                     RESUME
+                <div class="gs-bubble-wrapper js-link">
+                  <div class="gs-links-bubble gs-bubble"
+                    data="resume">
+                      RESUME
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="gs-bubble-wrapper">
-                  <div class="gs-links-bubble gs-bubble">
-                     LINKEDIN
+                <div class="gs-bubble-wrapper js-link">
+                  <div class="gs-links-bubble gs-bubble"
+                    data="linkedin">
+                      LINKEDIN
                   </div>
                 </div>
               </div>
@@ -229,6 +233,8 @@
         integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" 
         crossorigin="anonymous">
     </script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="node_modules/snabbt.js/snabbt.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="lib/clickoutside.js"></script>
     <script src="dist/app.js"></script>

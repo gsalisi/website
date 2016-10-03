@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: resume_gsalisi_may2014.pdf
+Disallow: scm.html
+Disallow: resume.html
+Disallow: aboutme.php
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /js/
+Disallow: /css/

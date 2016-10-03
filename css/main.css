@@ -2,7 +2,6 @@
 body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 100;
-  -webkit-user-select: none;
   cursor: default;
 }
 
@@ -16,6 +15,14 @@ a:visited,
 a:active {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 20px;
 }
 /* clearfixes */
 .cf:before,
@@ -83,15 +90,21 @@ a:active {
 }
 
   .gs-modal-container {
+    max-height: 95%;
+    max-width: 95%;
     position: relative;
-    height: 400px;
-    width: 720px;
+    margin: 20px;
     background: white;
     z-index: 3;
     box-shadow: 0 10px 60px -6px black;
-    padding: 50px 50px;
     overflow-y: auto;
+    display: flex;
   }
+    .gs-modal-content-wrapper {
+      max-width: 900px;
+      margin: 40px 40px;
+    }
+
     .gs-modal-title {
       font-family: 'Amatic SC', cursive;
       font-size: 5em;
@@ -99,6 +112,7 @@ a:active {
 
     .gs-modal-description {
       line-height: 2;
+      -webkit-user-select: none;
     }
 
     .gs-modal-close-btn {
@@ -110,14 +124,57 @@ a:active {
       cursor: pointer;
     }
 
+    .gs-modal-list {
+      font-size: 12px;
+    }
+
+    .gs-modal-link {
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .gs-modal-link:hover {
+      text-decoration: underline;
+    }
+
 .gs-main-content-container {
     max-width: 560px;
     padding-top: 100px;
 }
+  
+  .gs-logo-landing {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gs-logo {
+    max-height: 50%;
+    opacity: 0;
+    padding-bottom: 20px;
+  }
+
   .gs-row {
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
+  
+  .gs-caret-down-container {
+    position: relative;
+    margin: auto;
+    top: -100px;
+    width: 60px;
+    opacity: 0;
+  }
+
+    .gs-caret-down {
+      height: 30px;
+      width: 60px;
+    }
 
   .gs-main-name {
     font-family: 'Amatic SC', cursive;
@@ -141,7 +198,7 @@ a:active {
     margin: 0 auto;
     line-height: 2.5;
     text-align: justify;
-    padding: 0px 15px;
+    padding: 0px 20px;
   }
 
   .gs-group-title {
@@ -153,7 +210,7 @@ a:active {
   .gs-bubble-wrapper {
     display: table;
     margin: 20px auto;
-    letter-spacing: 1.2px
+    letter-spacing: 1.2px;
   }
     .gs-bubble {
       display: table-cell;
@@ -167,12 +224,14 @@ a:active {
 
     .gs-skill-bubble {
       border-radius: 75px;
+      background: black;
+      color: white;      
     }
 
     .gs-skill-bubble:hover {
-      color: white;
-      background: black;
-      transform: rotate(360deg);
+      color: black;
+      background: white;
+      transform: scale(1.1);
     }
 
     .gs-work-bubble:hover {
@@ -185,6 +244,8 @@ a:active {
       background: black;
       color: white;
       transform: rotate(26deg);
+      height: 120px;
+      width: 170px;
     }
 
     .gs-links-bubble:hover {
@@ -209,10 +270,15 @@ a:active {
     margin-top: 5px;
   }
 
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
     width: 100%;
+  }
+
+  .gs-modal-container {
+    overflow: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -227,21 +293,13 @@ a:active {
 }
 
 .md-effect {
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -ms-transform: scale(0.7);
   transform: scale(0.7);
   opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
   visibility: hidden;
 }
 
 .md-show.md-effect {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1;
   visibility: visible;
