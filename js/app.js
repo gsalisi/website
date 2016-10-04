@@ -152,7 +152,7 @@ $(function(){
   const linkDb = {
     github: 'https://github.com/gsalisi',
     linkedin: 'https://www.linkedin.com/in/geoffreysalisi',
-    resume: 'http://geoffreysalisi.com/gsalisi_resume_2015.pdf'
+    resume: 'http://geoffreysalisi.com/gsalisi_resume.pdf'
   };
   const db = {
     frontend: {
