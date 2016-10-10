@@ -31,12 +31,21 @@
       ga('send', 'pageview');
 
     </script>
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" 
+        integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="lib/animatedScrollTo.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="node_modules/snabbt.js/snabbt.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="gs-fixed-wrapper">
+    <div class="gs-fixed-wrapper js-fixed-wrapper">
       <div class="gs-modal-full md-effect js-modal">
         <div class="gs-modal-container">
           <span class="gs-modal-close-btn js-modal-closeBtn">X</span>
@@ -183,6 +192,20 @@ For the past couple of years, I developed web applications for companies such as
             </div>
           </div>
           <!-- END OF WORK EXPERIENCE -->
+          
+           <!-- TESTIMONIALS -->
+          <div class="row gs-row">
+            <div class="gs-group-title">
+             - TESTIMONIALS -
+            </div>
+          </div>
+          <div class="row gs-row">
+            <div class="gs-testimonial-wrapper js-testi">
+              <p class="gs-testimonial js-testi-text"></p>
+              <h5 class="gs-testimonial-owner js-testi-owner"></h5>
+            </div>
+          </div>
+          <!-- END OF TESTIMONIALS -->
 
           <!-- LINKS -->
           <div class="row gs-row">
@@ -232,14 +255,6 @@ For the past couple of years, I developed web applications for companies such as
       </div>       
     </div>
   
-    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" 
-        integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" 
-        crossorigin="anonymous">
-    </script>
-    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-    <script src="node_modules/snabbt.js/snabbt.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="lib/clickoutside.js"></script>
     <script src="dist/app.js"></script>
   </body>
 </html>

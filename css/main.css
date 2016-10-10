@@ -37,6 +37,11 @@ ul {
     *zoom: 1;
 }
 
+.no-opacity {
+  visibility: hidden;
+  opacity: 0;
+}
+
 /* end of clear fix */
 
 .row {
@@ -90,19 +95,18 @@ ul {
 }
 
   .gs-modal-container {
-    max-height: 95%;
-    max-width: 95%;
+    height: 100%;
+    width: 100%;
     position: relative;
-    margin: 20px;
-    background: white;
-    z-index: 3;
-    box-shadow: 0 10px 60px -6px black;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 30;
     overflow-y: auto;
     display: flex;
   }
     .gs-modal-content-wrapper {
       max-width: 900px;
-      margin: 40px 40px;
+      margin: auto;
+      padding: 20px;
     }
 
     .gs-modal-title {
@@ -188,7 +192,7 @@ ul {
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    background: url(../img/headshot.jpg);
+    background: url(../img/headshot.jpeg);
     background-size: cover;
     margin: 0 auto;
     border: 4px solid #000;
@@ -254,6 +258,24 @@ ul {
       transform: rotate(20deg);
     }
 
+.gs-testimonial-wrapper {
+  min-height: 200px;
+  text-align: justify;
+  margin: auto;
+  padding: 0 25px;
+} 
+
+  .gs-testimonial {
+    font-size: 1em;
+    line-height: 2.2;
+  }
+
+  .gs-testimonial-owner {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+
 .gs-footer {
   margin-top: 80px;
 }
@@ -272,7 +294,7 @@ ul {
 
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
     width: 100%;
   }
@@ -280,16 +302,26 @@ ul {
   .gs-modal-container {
     overflow: auto;
   }
+
+   /* Remove the padding we set earlier */
+  .gs-modal-title {
+    font-size: 4em;
+  }
+
+  .gs-main-name {
+    font-size: 4.8em;
+  }
 }
-@media (min-width: 1200px) {
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
   .container {
     width: 100%;
   }
-}
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
 
+  .gs-modal-container {
+    overflow: auto;
+  }
 }
 
 .md-effect {
